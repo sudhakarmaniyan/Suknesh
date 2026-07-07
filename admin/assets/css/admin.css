@@ -1,0 +1,35 @@
+body {
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #062027, #00778B);
+    color: #fff;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,.16);
+}
+
+.dashboard-card {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.table-card {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}

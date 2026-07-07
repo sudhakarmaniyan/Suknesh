@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS sukneshtechcenter;
+USE sukneshtechcenter;
+CREATE TABLE enquiries(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+email VARCHAR(150),
+phone VARCHAR(30),
+service VARCHAR(100),
+message TEXT,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

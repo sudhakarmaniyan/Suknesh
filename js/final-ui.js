@@ -1,0 +1,1 @@
+document.querySelectorAll('.fade-up').forEach(e=>new IntersectionObserver(x=>x.forEach(i=>i.target.classList.toggle('visible',i.isIntersecting))).observe(e));window.addEventListener('load',()=>document.body.classList.add('loaded'));

@@ -1,0 +1,21 @@
+/* Utility Classes */
+
+.rounded-4 {
+    border-radius: 24px !important;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #00778B, #168A4A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+    background: rgba(255,255,255,.78);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,.65);
+}

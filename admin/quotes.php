@@ -1,0 +1,1 @@
+<?php require '../php/db.php'; session_start(); $r=$conn->query('SELECT * FROM quotes'); while($x=$r->fetch_assoc()) echo $x['customer_name'].' '.$x['service'].'<br>'; ?>

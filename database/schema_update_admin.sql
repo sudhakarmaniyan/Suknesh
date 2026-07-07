@@ -1,0 +1,2 @@
+-- Module 4 uses the enquiries table from Module 3.
+-- Import Module 3 database/schema.sql first.

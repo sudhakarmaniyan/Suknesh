@@ -1,0 +1,1 @@
+Add meta description, sitemap.xml, robots.txt, compressed images, alt text, lazy loading, and minified assets.

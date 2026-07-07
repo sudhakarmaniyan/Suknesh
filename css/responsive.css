@@ -1,0 +1,43 @@
+/* Responsive Styles */
+
+@media (max-width: 991.98px) {
+    .display-3 {
+        font-size: 2.6rem;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand h5 {
+        font-size: 1rem;
+    }
+
+    .hero-section .min-vh-100 {
+        min-height: auto !important;
+        padding: 90px 0;
+    }
+
+    .hero-logo {
+        max-width: 320px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .display-3 {
+        font-size: 2.1rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .p-5 {
+        padding: 2rem !important;
+    }
+
+    .navbar-brand img {
+        width: 55px;
+    }
+}

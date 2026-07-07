@@ -1,0 +1,1 @@
+<?php require '../php/db.php'; $t=$_GET['t'];$id=(int)$_GET['id']; $conn->query('DELETE FROM '.$t.' WHERE id='.$id); echo 'Deleted';
