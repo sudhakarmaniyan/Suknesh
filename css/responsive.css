@@ -1,8 +1,18 @@
-/* Responsive Styles */
+/* Comprehensive Responsive Styles for Suknesh Techcenter LLP */
 
+/* Fix horizontal scrolling on mobile */
+html, body {
+    overflow-x: hidden;
+}
+
+/* TABLET AND SMALLER (Max 991px) */
 @media (max-width: 991.98px) {
     .display-3 {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
+    }
+    
+    .display-4 {
+        font-size: 2.4rem;
     }
 
     .display-5 {
@@ -10,34 +20,133 @@
     }
 
     .navbar-brand h5 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
+    /* Style the mobile navbar menu dropdown to look clean */
+    .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 1rem;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        z-index: 1000;
+    }
+
+    /* Reduce vertical padding on larger sections */
+    .py-5 {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+    }
+
+    /* Fix image and video layouts for tablet */
     .hero-section .min-vh-100 {
         min-height: auto !important;
-        padding: 90px 0;
+        padding: 100px 0;
     }
 
     .hero-logo {
-        max-width: 320px;
+        max-width: 350px;
         margin-top: 40px;
+    }
+    
+    /* Ensure footer elements wrap correctly */
+    .footer-section .col-lg-4, 
+    .footer-section .col-lg-2, 
+    .footer-section .col-lg-3 {
+        margin-bottom: 2rem;
     }
 }
 
+/* MOBILE DEVICES (Max 767px) */
+@media (max-width: 767.98px) {
+    /* Center align everything in the hero section for mobile */
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section .text-lg-start {
+        text-align: center !important;
+    }
+    
+    .hero-section .d-flex {
+        justify-content: center !important;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-section .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Stack grid elements neatly with spacing */
+    .row.g-4 > div {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Center align footer content on mobile */
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section ul {
+        display: inline-block;
+        text-align: left;
+    }
+
+    /* Video scaling */
+    .ratio-16x9 {
+        margin-top: 2rem;
+    }
+    
+    .client-logo-box {
+        margin-bottom: 1rem;
+    }
+}
+
+/* SMALL MOBILE DEVICES (Max 575px) */
 @media (max-width: 575.98px) {
     .display-3 {
-        font-size: 2.1rem;
+        font-size: 2.2rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
     }
 
     .lead {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
+    /* Tweak paddings for very small screens */
     .p-5 {
-        padding: 2rem !important;
+        padding: 1.5rem !important;
+    }
+    
+    .p-4 {
+        padding: 1.25rem !important;
     }
 
+    /* Ensure the navbar brand doesn't get too crushed */
     .navbar-brand img {
-        width: 55px;
+        width: 50px;
+    }
+    
+    .navbar-brand h5 {
+        font-size: 0.95rem;
+    }
+    
+    .navbar-brand small {
+        font-size: 0.75rem;
+    }
+    
+    /* Adjust carousel size on mobile */
+    .swiper-slide {
+        padding: 0 10px;
     }
 }

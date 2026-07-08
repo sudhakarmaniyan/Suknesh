@@ -25,3 +25,15 @@
         opacity: 1;
     }
 }
+
+/* 3D Modal Animation */
+.modal-3d.fade .modal-dialog {
+    transform: perspective(1200px) rotateX(-60deg) scale(0.8);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s ease;
+    opacity: 0;
+    transform-origin: top center;
+}
+.modal-3d.show .modal-dialog {
+    transform: perspective(1200px) rotateX(0deg) scale(1);
+    opacity: 1;
+}
