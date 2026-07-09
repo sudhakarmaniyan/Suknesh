@@ -1,0 +1,27 @@
+﻿diff --git a/index.html b/index.html
+index 0a6fc6d..aca2962 100644
+--- a/index.html
++++ b/index.html
+@@ -62,7 +62,7 @@ data-bs-target="#navbar">
+ 
+ <ul class="navbar-nav ms-auto">
+ 
+-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
++<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+ <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+ <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+ <li class="nav-item"><a class="nav-link" href="training.html">Training</a></li>
+@@ -897,10 +897,9 @@ FOOTER START
+ 
+ <div class="col-lg-4">
+ 
+-<img src="images/logo.png"
+-width="90"
+-class="mb-3"
+-alt="Suknesh Techcenter LLP Logo">
++<div class="bg-white p-2 rounded-3 d-inline-block mb-3 shadow-sm">
++<img src="images/logo.png" width="160" alt="Suknesh Techcenter LLP Logo">
++</div>
+ 
+ <h4 class="fw-bold">
+ Suknesh Techcenter LLP
