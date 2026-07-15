@@ -1,0 +1,42 @@
+# Composer
+vendor/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node/NPM (if using for frontend tools like Vite, Webpack, etc.)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.buildpath
+
+# Build directories or temp files
+/build/
+/dist/
+/tmp/
+/temp/
