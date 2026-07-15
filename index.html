@@ -170,6 +170,104 @@ alt="Suknesh Techcenter LLP">
 
 </div>
 
+<!-- Cool Animated Audio Button -->
+<style>
+/* Modern Animated Audio Button */
+#audioWidget {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #0d6efd, #198754);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
+    overflow: hidden;
+}
+
+#audioWidget:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(25, 135, 84, 0.4);
+}
+
+#audioWidget:active {
+    transform: translateY(2px) scale(0.95);
+}
+
+#audioWidget i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+#audioWidget.playing i {
+    animation: pulseIcon 1.5s infinite;
+}
+
+@keyframes pulseIcon {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#audioWidget span {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
+    z-index: 2;
+    position: relative;
+}
+
+/* Glowing outline effect */
+#audioWidget::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc, #ff00cc);
+    z-index: 0;
+    border-radius: 50px;
+    background-size: 400%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: glowBorder 5s linear infinite;
+}
+
+#audioWidget.playing::before {
+    opacity: 1;
+}
+
+#audioWidget::after {
+    content: '';
+    position: absolute;
+    top: 2px; left: 2px; right: 2px; bottom: 2px;
+    background: linear-gradient(135deg, #0d6efd, #198754);
+    z-index: 1;
+    border-radius: 50px;
+}
+
+@keyframes glowBorder {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+</style>
+
+<div id="audioWidget">
+    <i class="fas fa-play-circle text-white" id="audioIcon"></i>
+    <span id="audioText" class="text-white">Play Welcome Audio</span>
+</div>
+
+</div>
+
 </section>
 
 <!-- END OF PART A2 -->
@@ -186,7 +284,7 @@ alt="Suknesh Techcenter LLP">
 
 <div class="col-lg-6" data-aos="fade-right">
 
-<video src="videos/about_video.mp4"
+<video src="videos/timeline_1.mp4"
 class="img-fluid rounded-4 shadow-lg bg-white w-100"
 style="object-fit: cover;"
 autoplay loop muted controls>
